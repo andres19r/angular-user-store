@@ -1,1 +1,50 @@
-<p>register works!</p>
+<section class="container">
+  <div class="content">
+    <h3 class="content-title">REGISTER</h3>
+    <form>
+      <div>
+        <p>Name</p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your full name</mat-label>
+            <input matInput />
+            <mat-icon matSuffix>person</mat-icon>
+          </mat-form-field>
+        </p>
+      </div>
+      <div>
+        <p>Email</p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your email address</mat-label>
+            <input matInput />
+            <mat-icon matSuffix>mail</mat-icon>
+          </mat-form-field>
+        </p>
+      </div>
+      <div>
+        <p>Password</p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your password</mat-label>
+            <input matInput />
+            <mat-icon matSuffix>key</mat-icon>
+          </mat-form-field>
+        </p>
+      </div>
+      <div>
+        <p>Confirm Password</p>
+        <p>
+          <mat-form-field appearance="fill">
+            <mat-label>Confirm your password</mat-label>
+            <input matInput />
+          </mat-form-field>
+        </p>
+      </div>
+      <button mat-raised-button color="primary">Sign Up</button>
+    </form>
+    <p class="register">
+      Already have an account? <a routerLink="/auth/login">LOGIN</a>
+    </p>
+  </div>
+</section>
