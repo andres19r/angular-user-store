@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './file-upload.component.html',
-  styleUrl: './file-upload.component.scss'
+  styleUrl: './file-upload.component.scss',
 })
-export class FileUploadComponent {
-
-}
+export default class FileUploadComponent {}
