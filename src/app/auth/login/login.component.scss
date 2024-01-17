@@ -1,0 +1,50 @@
+.container {
+  height: 500px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px 1px rgba(143, 143, 143, 0.67);
+}
+
+.header {
+  height: 20%;
+  background-color: #3f51b5;
+  color: #27afe8;
+  text-align: center;
+  border-radius: 10px 10px 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.content {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  h3 {
+    margin-top: 15px;
+    color: #3f51b5;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 200;
+  }
+  form {
+    width: 300px;
+    display: grid;
+    mat-form-field {
+      width: 300px;
+    }
+  }
+  .register {
+    margin-top: 20px;
+    justify-self: end;
+    a {
+      text-decoration: none;
+    }
+  }
+}
