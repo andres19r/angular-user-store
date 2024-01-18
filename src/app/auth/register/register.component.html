@@ -1,13 +1,13 @@
 <section class="container">
   <div class="content">
     <h3 class="content-title">REGISTER</h3>
-    <form>
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
       <div>
         <p>Name</p>
         <p>
           <mat-form-field appearance="fill">
             <mat-label>Enter your full name</mat-label>
-            <input matInput />
+            <input formControlName="name" matInput />
             <mat-icon matSuffix>person</mat-icon>
           </mat-form-field>
         </p>
@@ -17,7 +17,7 @@
         <p>
           <mat-form-field appearance="fill">
             <mat-label>Enter your email address</mat-label>
-            <input matInput />
+            <input formControlName="email" matInput />
             <mat-icon matSuffix>mail</mat-icon>
           </mat-form-field>
         </p>
@@ -27,7 +27,7 @@
         <p>
           <mat-form-field appearance="fill">
             <mat-label>Enter your password</mat-label>
-            <input matInput />
+            <input formControlName="password" matInput />
             <mat-icon matSuffix>key</mat-icon>
           </mat-form-field>
         </p>
@@ -37,11 +37,11 @@
         <p>
           <mat-form-field appearance="fill">
             <mat-label>Confirm your password</mat-label>
-            <input matInput />
+            <input formControlName="confirmPassword" matInput />
           </mat-form-field>
         </p>
       </div>
-      <button mat-raised-button color="primary">Sign Up</button>
+      <button type="submit" mat-raised-button color="primary">Sign Up</button>
     </form>
     <p class="register">
       Already have an account? <a routerLink="/auth/login">LOGIN</a>

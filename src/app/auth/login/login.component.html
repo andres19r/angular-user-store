@@ -4,13 +4,13 @@
   </div>
   <div class="content">
     <h3 class="content-title">LOGIN</h3>
-    <form>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
       <div>
         <p>Email</p>
         <p>
           <mat-form-field appearance="fill">
             <mat-label>Enter your email address</mat-label>
-            <input matInput />
+            <input formControlName="email" matInput />
             <mat-icon matSuffix>mail</mat-icon>
           </mat-form-field>
         </p>
@@ -20,12 +20,12 @@
         <p>
           <mat-form-field appearance="fill">
             <mat-label>Enter your password</mat-label>
-            <input matInput />
+            <input type="password" formControlName="password" matInput />
             <mat-icon matSuffix>key</mat-icon>
           </mat-form-field>
         </p>
       </div>
-      <button mat-raised-button color="primary">LOGIN</button>
+      <button type="submit" mat-raised-button color="primary">LOGIN</button>
     </form>
     <p class="register">
       Don't have an account? <a routerLink="/auth/register">SIGN UP</a>
